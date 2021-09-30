@@ -1,0 +1,8 @@
+<form [formGroup] = "myForm">
+  <input type="text" name="first_name" placeholder="Фамилия" formControlName="first_name">
+  <input type="text" name="sec_name" placeholder="Имя" formControlName="sec_name" >
+  <input type="number" name="tax_number" placeholder="ИНН" formControlName="tax_number">
+  <input type="email" name="email" placeholder="Почта" formControlName="email">
+  <input type="text" name="company" placeholder="Компания" formControlName="company">
+  <button (click)="submit()" routerLink="/clients">Добавить клиента</button>
+</form>
